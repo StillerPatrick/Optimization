@@ -11,7 +11,7 @@ Ein weiterhin bestehende Problem ist die dynamische Anpassung der Schrittweite. 
 # Problem mit zwei Freiheitsgraden
 Bei diesem Problem reicht die das oben beschriebene Gradientenverfahren nicht mehr aus. Der Winkel zwischen der x1x2-Ebene (x3=0) und der Graden, die bei der Veränderung des ursprünglichen Punktes um Epsilon (ganz kleine pos. Zahl entsteht) ensteht berechnet.
 Dies wird in x-,y- und xy-Richtung berechnet. Dadurch kann man die insgesamte Schrittweite am Abstieg anpassen und auch eigenständig die Schrittweite für die einzelnen Richtungen.
-Danach werden die oben unter einem Freiheitsgrad beschriebenen Heuristiken verwendet.
+Danach werden die schon oben beschriebenen Heuristiken verwendet.
 # Probleme mit n Freiheitsgraden
 Dies wurde noch gar nicht implementiert. Hier lohnen sich eventuell das Nelder-Mead-Verfahren, das Quantum-Annealing-Verfahren oder die Partikelschwarmoptimierung. (siehe Quellen)
 # Quellen
