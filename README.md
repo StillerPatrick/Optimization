@@ -9,7 +9,19 @@ Beim  „Simulated Annealing“-Verfahren wird versucht nicht in einem lokalen M
 Die Mischung besteht daraus, dass beim "Simulated Annealing"-Verfahren der nächst auszuwertende Punkt durch das Gradientenverfahren bestimmt wird. Damit man aber nicht in einem lokalen Maximum endet, kann es im Programm zufällig dazu kommen, dass der nächste zu prüfende Punkt in der entgegengesetzten Richtung liegt.
 Ein weiterhin bestehende Problem ist die dynamische Anpassung der Schrittweite. Eine mögliche Idee ist die Orientierung an den möglichen Optimierungsgrenzen(noch sind keine vorhanden) und anhand der differnz der beiden Grenzen eine anfängliche Schrittweite zu berechnen.
 # Problem mit zwei Freiheitsgraden
-Bei diesem Problem reicht die das oben beschriebene Gradientenverfahren nicht mehr aus. Der Winkel zwischen der x1x2-Ebene (x3=0) und der Graden, die bei der Veränderung des ursprünglichen Punktes um Epsilon (ganz kleine pos. Zahl entsteht) ensteht berechnet. Die Formel dazu ist
-Dies wird in x-,y- und xy-Richtung berechnet. Dadurch hat man einen 
+Bei diesem Problem reicht die das oben beschriebene Gradientenverfahren nicht mehr aus. Der Winkel zwischen der x1x2-Ebene (x3=0) und der Graden, die bei der Veränderung des ursprünglichen Punktes um Epsilon (ganz kleine pos. Zahl entsteht) ensteht berechnet.
+Dies wird in x-,y- und xy-Richtung berechnet. Dadurch kann man die insgesamte Schrittweite am Abstieg anpassen und auch eigenständig die Schrittweite für die einzelnen Richtungen.
+Danach werden die oben unter einem Freiheitsgrad beschriebenen Heuristiken verwendet.
 # Probleme mit n Freiheitsgraden
+Dies wurde noch gar nicht implementiert. Hier lohnen sich eventuell das Nelder-Mead-Verfahren, das Quantum-Annealing-Verfahren oder die Partikelschwarmoptimierung. (siehe Quellen)
 # Quellen
+https://arxiv.org/pdf/1611.04471.pdf
+https://www.sciencedirect.com/science/article/abs/pii/0009261494001170
+https://aip.scitation.org/doi/full/10.1063/1.2995837
+https://de.wikipedia.org/wiki/Simulated_Annealing
+https://de.wikipedia.org/wiki/Gradientenverfahren
+https://arxiv.org/ftp/arxiv/papers/1404/1404.2465.pdf
+https://de.wikipedia.org/wiki/Partikelschwarmoptimierung
+https://de.wikipedia.org/wiki/Downhill-Simplex-Verfahren
+http://www.swarmintelligence.org/tutorials.php
+https://www.tu-chemnitz.de/informatik/ThIS/downloads/courses/ss02/es/woelflick.pdf
