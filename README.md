@@ -14,6 +14,8 @@ Dies wird in x-,y- und xy-Richtung berechnet. Dadurch kann man die insgesamte Sc
 Danach werden die schon oben beschriebenen Heuristiken verwendet.
 # Probleme mit n Freiheitsgraden
 Dies wurde noch gar nicht implementiert. Hier lohnen sich eventuell das Nelder-Mead-Verfahren, das Quantum-Annealing-Verfahren oder die Partikelschwarmoptimierung. (siehe Quellen)
+# Aktuelle Schwierigkeiten
+Man weiß nicht genau wann die Simulation durchgelaufen ist. Es ist schwierig zu wissen wo genau die Ergebnisse gespeichert werden. Es sind nur 2 Parameter änderbar. Die json Datein sind uneinheitlich. Man weiß nicht nach was genau man optimieren muss (evtl hinterlegen oder soll man das eingeben müssen). Manchmal liefert die Simulation null zurück.
 # Quellen
 https://arxiv.org/pdf/1611.04471.pdf
 https://www.sciencedirect.com/science/article/abs/pii/0009261494001170
