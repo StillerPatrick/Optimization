@@ -31,11 +31,13 @@ ystep=1;
 bug=0;
 xr=0;
 yr=0;
-way=0; #zum überprüfen welche variabel optimiert werden soll, noch nicht fertig
+way=0; #zum überprüfen welche variabel optimiert werden soll, noch nicht fertig, noch nicht verwendet
+       #im endgültigen Programm hoffentlich nicht so verwendet
 
 while i<1000:
     if way ==0:
         while T > 0:
+            #simulated Annealing
             x=x+step*xstep
             y=y+step*ystep
             z= f(x,y);
@@ -51,10 +53,12 @@ while i<1000:
             t=t+1;
             T = (20-.01*t); 
             l= random.randint(0,1);
+            #zum ausgleichen von der geplannten richtung, wird im laufe des programmes ja sowies unwahrscheinlicher schlechter zu werden
             if l==0:
                 step= step;
             if l==1:
                 step= (-step);
+            #berechnung der schrittweite
             if ((2*epsilon*epsilon)+((f(x+epsilon, y+epsilon)-f(x,y))*(f((x+epsilon), (y+epsilon)-f(x,y))))) <0:
                 #print ("die wurzel ist schuld!");
                 bug=bug+1;
